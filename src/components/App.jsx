@@ -1,13 +1,17 @@
 import React from 'react';
-import Season from './Season';
-import Schedule from './Schedule';
-import Produce from './Produce';
+import Header from './Header';
+import Body from './Body';
 
 function App() {
   return (
     <div>
-      <Season />
-      <Schedule />
+      <style jsx global>{`
+        body {
+          font-family: Helvetica;
+        }
+      `}</style>
+      <Header />
+      <Body />
     </div>
   );
 }
