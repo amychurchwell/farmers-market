@@ -4,6 +4,7 @@ import Body from './Body';
 import ScheduleDisplay from './ScheduleDisplay';
 import { Switch, Route } from 'react-router-dom';
 import Season from './Season';
+import Error404 from './Error404';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/" component={Body} />
         <Route exact path="/schedule" component={ScheduleDisplay} />
         <Route exact path="/produce" component={Season} />
+        <Route component={Error404} />
       </Switch>
     </div>
   );
